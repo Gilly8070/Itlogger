@@ -16,9 +16,9 @@ const AddTechModal = ({ addTech }) => {
                 firstName,
                 lastName
             });
-            M.toast({ html: `${firstName} ${lastName} was added asca tech` });
+            M.toast({ html: `${firstName} ${lastName} was added as a tech` });
 
-            // Claer Fields
+            // Clear Fields
             setFirstName('');
             setLastName('')
         }
@@ -36,7 +36,7 @@ const AddTechModal = ({ addTech }) => {
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                             />
-                            <label htmlFor="firstname" className="active">
+                            <label htmlFor="firstName" className="active">
                                 First Name
                             </label>
                         </div>
@@ -50,7 +50,7 @@ const AddTechModal = ({ addTech }) => {
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                             />
-                            <label htmlFor="lastname" className="active">
+                            <label htmlFor="lastName" className="active">
                                 Last Name
                             </label>
                         </div>

@@ -10,7 +10,7 @@ import {
     SEARCH_LOGS
 } from '../actions/types';
 
-const initailState = {
+const initialState = {
     logs: null,
     current: null,
     loading: false,
@@ -18,7 +18,7 @@ const initailState = {
 }
 
 
-export default (state = initailState, action) => {
+export default (state = initialState, action) => {
     switch(action.type) {
         case GET_LOGS:
             return {

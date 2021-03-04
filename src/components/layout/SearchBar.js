@@ -28,7 +28,7 @@ const SearchBar = ({ searchLogs }) => {
     );
 };
 
-SearchBar.prorpTypes = {
+SearchBar.propTypes = {
     searchLogs: PropTypes.func.isRequired,
 }
 

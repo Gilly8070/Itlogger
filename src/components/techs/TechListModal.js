@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { getTechs } from '../../actions/techAction';
 import TechItem from './TechItem';
 import PropTypes from 'prop-types';
+import { getTechs } from '../../actions/techAction';
 
 const TechListModal = ({ getTechs, tech: { techs, loading } }) => {
     // const [techs, setTechs] = useState([]);

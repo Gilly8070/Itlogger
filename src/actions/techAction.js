@@ -21,7 +21,7 @@ export const getTechs = () => async dispatch => {
     } catch (err) {
         dispatch({
             type: TECHS_ERROR,
-            payload: err.response.statusText
+            payload: err.response
         });
     }
 };
@@ -35,7 +35,7 @@ export const addTechs = (tech) => async dispatch => {
         const res = await fetch('/techs', {
             method: 'POST',
             body: JSON.stringify(tech),
-            headres: {
+            headers: {
                 'Content-Type': 'application/json'
             }
         });
@@ -49,7 +49,7 @@ export const addTechs = (tech) => async dispatch => {
     } catch (err) {
         dispatch({
             type: TECHS_ERROR,
-            payload: err.response.statusText
+            payload: err.response
         });
     }
 };
@@ -78,7 +78,7 @@ export const addTech = tech => async dispatch => {
     } catch (err) {
         dispatch({
             type: TECHS_ERROR,
-            payload: err.response.statusText
+            payload: err.response
         });
     }
 };
@@ -99,7 +99,7 @@ export const deleteTechs = (id) => async dispatch => {
     } catch (err) {
         dispatch({
             type: TECHS_ERROR,
-            payload: err.response.statusText
+            payload: err.response
         });
     }
 };
@@ -121,7 +121,7 @@ export const deleteTech = id => async dispatch => {
     } catch (err) {
         dispatch({
             type: TECHS_ERROR,
-            payload: err.response.statusText
+            payload: err.response
         });
     }
 };
